@@ -4,7 +4,6 @@ import { cn } from "../../utils/cn";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
 
-// TypewriterEffect component
 export const TypewriterEffect = ({
   words,
   className,
@@ -50,7 +49,7 @@ export const TypewriterEffect = ({
       <motion.div ref={scope} className="inline">
         {wordsArray.map((word, idx) => {
           return (
-            <div key={`word-${idx}`} className="block">
+            <div key={`word-${idx}`} className="inline-block">
               {word.text.map((char, index) => (
                 <motion.span
                   initial={{}}
@@ -63,6 +62,7 @@ export const TypewriterEffect = ({
                   {char}
                 </motion.span>
               ))}
+              &nbsp;
             </div>
           );
         })}
@@ -90,7 +90,7 @@ export const TypewriterEffect = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500",
+          "inline-block rounded-sm w-[4px] h-6  md:h-6 lg:h-10 bg-blue-500",
           cursorClassName
         )}
       ></motion.span>
@@ -98,8 +98,6 @@ export const TypewriterEffect = ({
   );
 };
 
-
-// TypewriterEffectSmooth component
 export const TypewriterEffectSmooth = ({
   words,
   className,
@@ -124,7 +122,7 @@ export const TypewriterEffectSmooth = ({
       <div>
         {wordsArray.map((word, idx) => {
           return (
-            <div key={`word-${idx}`} className="block">
+            <div key={`word-${idx}`} className="inline-block">
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
@@ -133,6 +131,7 @@ export const TypewriterEffectSmooth = ({
                   {char}
                 </span>
               ))}
+              &nbsp;
             </div>
           );
         })}
@@ -141,7 +140,7 @@ export const TypewriterEffectSmooth = ({
   };
 
   return (
-    <div className={cn("flex flex-col items-center my-6", className)}>
+    <div className={cn("flex space-x-1 my-6", className)}>
       <motion.div
         className="overflow-hidden pb-2"
         initial={{
@@ -174,6 +173,7 @@ export const TypewriterEffectSmooth = ({
         }}
         transition={{
           duration: 0.8,
+
           repeat: Infinity,
           repeatType: "reverse",
         }}

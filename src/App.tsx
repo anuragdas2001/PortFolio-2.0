@@ -3,6 +3,7 @@ import { Test } from "./components/test";
 import { Avatar } from "./components/Avatar";
 import { About } from "./components/AboutMe";
 import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
       <About />
 
       <Skills />
-
+      <Projects/>
       <Test />
     </>
   );
