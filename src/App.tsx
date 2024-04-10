@@ -10,17 +10,14 @@ import { Blogs } from "./components/Blogs";
 function App() {
   return (
     <>
-      {/* <h1 className="">Hello App</h1> */}
       <Navbar />
       <Avatar />
       <Profile />
-
       <Skills />
       <Projects />
       <AboutMe />
-      <Blogs/>
-      <ContactUs/>
-      {/* <Test /> */}
+      <Blogs />
+      <ContactUs />
     </>
   );
 }
