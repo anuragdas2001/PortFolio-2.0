@@ -3,12 +3,12 @@ import { BackgroundGradient } from "./aceternityui/background-gradient";
 
 export const Projects = () => {
   const projects = [
-    { name: "MindSpace", url: "" },
-    { name: "MindSpace", url: "" },
-    { name: "MindSpace", url: "" },
-    { name: "MindSpace", url: "" },
-    { name: "MindSpace", url: "" },
-    { name: "MindSpace", url: "" },
+    { name: "MindSpace", url: "https://mindspaceuniverse.netlify.app/", img: "https://mindspaceuniverse.netlify.app/StressIcon_CodeBlaze.png" },
+    { name: "MindSpace", url: "", img: "" },
+    { name: "MindSpace", url: "", img: "" },
+    { name: "MindSpace", url: "", img: "" },
+    { name: "MindSpace", url: "", img: "" },
+    { name: "MindSpace", url: "", img: "" },
   ];
   console.log(projects);
   console.log(typeof projects);
@@ -21,7 +21,7 @@ export const Projects = () => {
           {projects.map((proj, key) => (
             <div className="m-10 rounded-md">
               <BackgroundGradient className="rounded-[22px] w-auto p-4 sm:p-10 bg-white dark:bg-zinc-900">
-                <ProjectsItem key={key} name={proj.name} url={proj.url} />
+                <ProjectsItem key={key} name={proj.name} url={proj.url} img={proj.img} />
               </BackgroundGradient>
             </div>
           ))}

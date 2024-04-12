@@ -35,7 +35,7 @@ export function Profile() {
   ];
   return (
     <>
-      <span className="h-60 grid mt-20 ms-7 sm:grid-cols-3  justify-start">
+      <span className="h-96 w-auto text-xs sm:text-sm md:text-3xl lg:text-5xl grid mt-8 mb-0 ms-7  sm:grid-cols-4 justify-start">
         <TypewriterEffect words={words} />
       </span>
     </>

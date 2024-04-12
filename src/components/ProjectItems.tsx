@@ -13,24 +13,22 @@ import {
 interface Props {
   name: string;
   url: string;
+  img: string;
 }
 
-export const ProjectsItem = ({ name, url }: Props) => {
+export const ProjectsItem = ({ name, url, img }: Props) => {
   return (
     <Card className="max-w-[400px]">
-      <CardHeader className="flex gap-3">
-        <Image
-          alt="nextui logo"
-          height={40}
-          radius="sm"
-          src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-          width={40}
-        />
-        <div className="flex flex-col">
-          <p className="text-md">{name}</p>
-          <p className="text-small text-default-500">{url}</p>
-        </div>
+      <CardHeader className="flex gap-3 text-center ">
+        <Image alt="nextui logo" height={8} radius="sm" src={img} width={40} />
+        <a href={url} target="_blank">
+          <div className="flex flex-col items-center">
+            <p className="text-center text-2xl ms-0 text-white">{name}</p>
+            {/* <p className="text-small text-default-500">{url}</p> */}
+          </div>
+        </a>
       </CardHeader>
+
       <Divider />
       <CardBody>
         <p>Make beautiful websites regardless of your design experience.</p>
@@ -40,7 +38,7 @@ export const ProjectsItem = ({ name, url }: Props) => {
         <Link
           isExternal
           showAnchorIcon
-          href="https://github.com/nextui-org/nextui"
+          href="https://github.com/RohanSengupta326/MindSpace"
         >
           Visit source code on GitHub.
         </Link>

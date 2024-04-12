@@ -7,6 +7,8 @@ import { Projects } from "./components/Projects";
 import { AboutMe } from "./components/AboutMe";
 import { ContactUs } from "./components/ContactUs";
 import { Blogs } from "./components/Blogs";
+import { Certifications } from "./components/Certifications";
+import { Achievements } from "./components/Achievements";
 function App() {
   return (
     <>
@@ -16,6 +18,8 @@ function App() {
       <Skills />
       <Projects />
       <AboutMe />
+      <Certifications/>
+      <Achievements/>
       <Blogs />
       <ContactUs />
     </>
