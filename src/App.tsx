@@ -1,5 +1,4 @@
 import { Navbar } from "./components/Navbar";
-import { Test } from "./components/test";
 import { Avatar } from "./components/Avatar";
 import { Profile } from "./components/Profile";
 import { Skills } from "./components/Skills";
@@ -9,6 +8,8 @@ import { ContactUs } from "./components/ContactUs";
 import { Blogs } from "./components/Blogs";
 import { Certifications } from "./components/Certifications";
 import { Achievements } from "./components/Achievements";
+
+
 function App() {
   return (
     <>
@@ -18,8 +19,8 @@ function App() {
       <Skills />
       <Projects />
       <AboutMe />
-      <Certifications/>
-      <Achievements/>
+      <Certifications />
+      <Achievements />
       <Blogs />
       <ContactUs />
     </>

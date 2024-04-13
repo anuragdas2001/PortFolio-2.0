@@ -14,9 +14,11 @@ interface Props {
   name: string;
   url: string;
   img: string;
+  repo: string;
+  desc:string;
 }
 
-export const ProjectsItem = ({ name, url, img }: Props) => {
+export const ProjectsItem = ({ name, url, img, repo,desc }: Props) => {
   return (
     <Card className="max-w-[400px]">
       <CardHeader className="flex gap-3 text-center ">
@@ -31,14 +33,14 @@ export const ProjectsItem = ({ name, url, img }: Props) => {
 
       <Divider />
       <CardBody>
-        <p>Make beautiful websites regardless of your design experience.</p>
+        <p>{desc}</p>
       </CardBody>
       <Divider />
       <CardFooter>
         <Link
           isExternal
           showAnchorIcon
-          href="https://github.com/RohanSengupta326/MindSpace"
+          href={repo}
         >
           Visit source code on GitHub.
         </Link>

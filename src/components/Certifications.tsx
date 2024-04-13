@@ -18,7 +18,14 @@ export const Certifications = () => {
       content: <CertificationSkeleton />,
       className: "col-span-1",
       thumbnail:
-        "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~FBJAELDLRR4E/CERTIFICATE_LANDING_PAGE~FBJAELDLRR4E.jpeg",
+        "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~VHZR6DKZ6UZP/CERTIFICATE_LANDING_PAGE~VHZR6DKZ6UZP.jpeg",
+    },
+    {
+      id: 1,
+      content: <CertificationSkeleton />,
+      className: "col-span-1",
+      thumbnail:
+        "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~DE5EMMTH829A/CERTIFICATE_LANDING_PAGE~DE5EMMTH829A.jpeg",
     },
     {
       id: 2,
@@ -40,25 +47,29 @@ export const Certifications = () => {
       className: "col-span-1",
       thumbnail:
         "../../assets/certificates/certificate177307189ef448573c36cc9a17780c744db851b_page-0001.jpg",
-    },{
+    },
+    {
       id: 4,
       content: <CertificationSkeleton />,
       className: "col-span-1",
       thumbnail:
         "../../assets/certificates/certificate1773072221c57f7625f24f4847367e55d9c9119_page-0001.jpg",
-    },{
+    },
+    {
       id: 4,
       content: <CertificationSkeleton />,
       className: "col-span-1",
       thumbnail:
         "../../assets/certificates//certificate177307352b7ec1f2d066bc29385d38b3c54f7e4_page-0001.jpg",
-    },{
+    },
+    {
       id: 4,
       content: <CertificationSkeleton />,
       className: "col-span-1",
       thumbnail:
         "../../assets/certificates/certificate28681851d8be6c7f7eb5277a8f4cdb3ae1e95b5_page-0001.jpg",
-    },{
+    },
+    {
       id: 4,
       content: <CertificationSkeleton />,
       className: "col-span-1",

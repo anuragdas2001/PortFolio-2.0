@@ -2,10 +2,10 @@ export const Avatar = () => {
   console.log("Avatar");
   return (
     <>
-      <div className="float-right items-end h-52 w-32 md:w-32 lg:w-48  m-10 ">
+      <div className="float-right items-end h-52 w-32 sm:h-60 sm:w-60 md:h-72 md:w-72 lg:h-96 lg:w-96   m-10 ">
         <img
           className="rounded-full "
-          src="https://pbs.twimg.com/profile_images/1777251936301142016/AXmDEntE_400x400.jpg"
+          src="https://pbs.twimg.com/profile_images/1778138976119037956/61OqPY9Q_400x400.jpg"
           alt="Image Description"
         />
       </div>
