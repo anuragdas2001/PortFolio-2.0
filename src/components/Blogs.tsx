@@ -1,37 +1,11 @@
 import { BackgroundBeams } from "./aceternityui/background-beams";
 ("use client");
 ("use client");
-import React from "react";
-import reactElementToJSXString from "react-element-to-jsx-string";
-import { toast, Toaster } from "sonner";
-import { ButtonsCard } from "./aceternityui/tailwindcss-buttons";
+import {  Toaster } from "sonner";
+
 
 export function Blogs() {
-  const copy = (button: any) => {
-    if (button.code) {
-      copyToClipboard(button.code);
-      return;
-    }
-    let buttonString = reactElementToJSXString(button.component);
 
-    if (buttonString) {
-      const textToCopy = buttonString;
-      copyToClipboard(textToCopy);
-    }
-  };
-
-  const copyToClipboard = (text: string) => {
-    navigator.clipboard
-      .writeText(text)
-      .then(() => {
-        console.log("Text copied to clipboard:", text);
-        toast.success("Copied to clipboard");
-      })
-      .catch((err) => {
-        console.error("Error copying text to clipboard:", err);
-        toast.error("Error copying to clipboard");
-      });
-  };
   return (
     <>
       <div className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">

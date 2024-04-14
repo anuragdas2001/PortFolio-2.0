@@ -1,5 +1,4 @@
 import { BiLogoReact } from "react-icons/bi";
-import { DiNodejs } from "react-icons/di";
 import { AiFillHtml5 } from "react-icons/ai";
 import { BiLogoJavascript } from "react-icons/bi";
 import { BiLogoTailwindCss } from "react-icons/bi";
@@ -11,7 +10,6 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
 import { BiLogoNodejs } from "react-icons/bi";
-import { HoverEffect } from "./aceternityui/card-hover-effect";
 import { Meteors } from "./aceternityui/meteors";
 export const projects = [
   {
