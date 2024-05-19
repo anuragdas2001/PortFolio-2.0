@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../utils/cn";
 
-
 type Card = {
   id: number;
   content: JSX.Element | React.ReactNode | string;
@@ -15,14 +14,11 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected] = useState<Card | null>(null);
   const [lastSelected] = useState<Card | null>(null);
 
-
-
   return (
-    <div className="w-full h-full p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 sm:gap-4 md:gap-12  max-w-7xl mx-auto">
+    <div className="w-full h-full p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3  gap-12 sm:gap-4 md:gap-12  max-w-7xl mx-auto">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
-           
             className={cn(
               card.className,
               "relative overflow-hidden",
@@ -59,7 +55,7 @@ const BlurImage = ({ card }: { card: Card }) => {
       width="500"
       onLoad={() => setLoaded(true)}
       className={cn(
-        "object-cover  absolute inset-0 h-full transition duration-200",
+        "object-cover  absolute inset-0 h-full w-full transition duration-200",
         loaded ? "blur-none" : "blur-md"
       )}
       alt="thumbnail"

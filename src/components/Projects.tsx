@@ -11,6 +11,20 @@ export const Projects = () => {
       desc: "An Application to cure mental illness, depression, anxiety and stress",
     },
     {
+      name: "Brunel",
+      url: "Coming Soon",
+      img: "Coming Soon",
+      repo: "https://github.com/anuragdas2001/Brunel",
+      desc: "Promotes staff augmentation services, with a focus on unicorn companies, prioritizing exceptional user experience.",
+    },
+    {
+      name: "Credit Slider",
+      url: "Coming Soon",
+      img: "Coming Soon",
+      repo: "https://github.com/anuragdas2001/Smartify",
+      desc: "Developed a React component featuring top-up functionality and a customizable credit slider, as per the Figma design.",
+    },
+    {
       name: "VirtuCart",
       url: "https://virtucart.netlify.app/",
       img: "",
@@ -45,6 +59,13 @@ export const Projects = () => {
       repo: "Coming Soon",
       desc: "Stay tuned....  Something is cooking.... Can't tell much about it 🤨",
     },
+    {
+      name: "Coming Soon",
+      url: "Coming Soon",
+      img: "Coming Soon",
+      repo: "Coming Soon",
+      desc: "Stay tuned....  Something is cooking.... Can't tell much about it 🤨",
+    },
   ];
   console.log(projects);
   console.log(typeof projects);
@@ -53,10 +74,10 @@ export const Projects = () => {
       <div className="bg-black grid grid-cols-1  h-auto my-10 text-white text-3xl text-center">
         <h1>Projects</h1>
 
-        <div className="flex grid grid-cols-1 sm:grid-cols-1 md:grid-cols- lg:grid-cols-2 xl:grid-cols-3  border-2 border-orange-500 m-10 rounded-xl ">
+        <div className="flex grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3  border-2 border-orange-500 m-5 rounded-md ">
           {projects.map((proj, key) => (
             <div className="m-10 rounded-md">
-              <BackgroundGradient className="rounded-[22px] w-auto p-4 sm:p-10 bg-white dark:bg-zinc-900">
+              <BackgroundGradient className="rounded-[34px] w-auto  p-2 sm:p-10 bg-white dark:bg-zinc-900">
                 <ProjectsItem
                   key={key}
                   name={proj.name}

@@ -19,9 +19,9 @@ interface Props {
 
 export const ProjectsItem = ({ name, url, img, repo,desc }: Props) => {
   return (
-    <Card className="max-w-[400px]">
-      <CardHeader className="flex gap-3 text-center ">
-        <Image alt="nextui logo" height={8} radius="sm" src={img} width={40} />
+    <Card className="max-w-[1000px]">
+      <CardHeader className="flex gap-3 text-center">
+        <Image alt="nextui logo" height={8} radius="sm" src={img} width={72} />
         <a href={url} target="_blank">
           <div className="flex flex-col items-center">
             <p className="text-center text-2xl ms-0 text-white">{name}</p>
@@ -32,7 +32,7 @@ export const ProjectsItem = ({ name, url, img, repo,desc }: Props) => {
 
       <Divider />
       <CardBody>
-        <p>{desc}</p>
+        <span className="text-sm">{desc}</span>
       </CardBody>
       <Divider />
       <CardFooter>
